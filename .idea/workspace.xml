@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1685d161-f707-4743-86b7-db5e6280010a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/GPUUsage.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/assets/caret.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/assets/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/assets/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/assets/elg_calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/assets/elg_calendar_inv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/assets/rcheck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/src/pickers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/src/rangeTooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/src/rangeTooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/src/sdpi.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyInspector/src/sdtools.common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/DejaVuSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/expansion-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="39YUuYhevcoJSKrTyLFNreRleSZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/adam/PycharmProjects/GPUUsage/images"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1685d161-f707-4743-86b7-db5e6280010a" name="Changes" comment="" />
+      <created>1770872722562</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770872722562</updated>
+    </task>
+    <servers />
+  </component>
+</project>

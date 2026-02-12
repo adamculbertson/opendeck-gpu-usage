@@ -1,0 +1,132 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/expansion-card",
+      "Name": "GPU Usage",
+      "States": [
+        {
+          "Image": "images/expansion-card",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Show GPU usage (percentage)",
+      "UUID": "me.adamculbertson.gpuusage.usage",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/expansion-card",
+      "Name": "VRAM Total (GB)",
+      "States": [
+        {
+          "Image": "images/expansion-card",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Display total VRAM of the GPU",
+      "UUID": "me.adamculbertson.gpuusage.vram_total",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/expansion-card",
+      "Name": "VRAM Used (GB)",
+      "States": [
+        {
+          "Image": "images/expansion-card",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Display VRAM used of the GPU in GB",
+      "UUID": "me.adamculbertson.gpuusage.vram_used",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/expansion-card",
+      "Name": "VRAM Usage (%)",
+      "States": [
+        {
+          "Image": "images/expansion-card",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Display the VRAM usage of the GPU as a percentage",
+      "UUID": "me.adamculbertson.gpuusage.vram_usage",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/expansion-card",
+      "Name": "Power Usage",
+      "States": [
+        {
+          "Image": "images/expansion-card",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Display the power usage of the GPU in Watts",
+      "UUID": "me.adamculbertson.gpuusage.power_usage",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/expansion-card",
+      "Name": "Throttle",
+      "States": [
+        {
+          "Image": "images/expansion-card",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Indicates if the GPU is throttling or not",
+      "UUID": "me.adamculbertson.gpuusage.throttle",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    },
+    {
+      "Icon": "images/expansion-card",
+      "Name": "Temperature",
+      "States": [
+        {
+          "Image": "images/expansion-card",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Displays the GPU temperature in Celsius",
+      "UUID": "me.adamculbertson.gpuusage.temperature",
+      "PropertyInspectorPath": "PropertyInspector/settings.html"
+    }
+  ],
+  "Author": "Adam Culbertson",
+  "Description": "Displays various GPU usage statistics",
+  "Name": "GPU Usage",
+  "Icon": "images/expansion-card",
+  "URL": "https://github.com/adamculbertson",
+  "Version": "1.0.0",
+  "CodePath": "main.py",
+  "Category": "GPU",
+  "CategoryIcon": "images/expansion-card",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    },
+    {
+      "Platform": "linux",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.4.1"
+  }
+}
