@@ -3,11 +3,19 @@
 set -euo pipefail
 
 # Configuration
-DEV_DIR="GPUUsage"
+DEV_DIR="opendeck-gpu-usage"
 PLUGIN_NAME="me.adamculbertson.gpuusage.sdPlugin"
 OUTPUT_FILE="GPUUsage.streamDeckPlugin" # Using the official extension
 
 echo "Building $PLUGIN_NAME..."
+
+# Check if the script is being ran from within the dev dir
+# If it is, then set the dev dir to the directory up a level
+CURRENT_DIR=$(basename $PWD)
+
+if [[ "$CURRENT_DIR" == "$DEV_DIR" ]]; then
+    DEV_DIR="../$DEV_DIR"
+fi
 
 # Create a temporary staging area
 STAGING_DIR=$(mktemp -d)
