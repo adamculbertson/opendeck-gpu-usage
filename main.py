@@ -22,12 +22,11 @@ PLUGIN_DIR = os.path.dirname(os.path.abspath(__file__))
 FONT_PATH = os.path.join(os.path.join(PLUGIN_DIR, "fonts"), "DejaVuSans-Bold.ttf")
 
 try:
-    value_font = ImageFont.truetype(FONT_PATH, 16)
     wattage_font = ImageFont.truetype(FONT_PATH, 12)
 except OSError:
     # Fallback if the font path is wrong
     logging.warning("Font file not found, falling back to default.")
-    value_font = wattage_font = ImageFont.load_default()
+    wattage_font = ImageFont.load_default()
 
 
 def handle_signal(sig, frame):
@@ -37,31 +36,6 @@ def handle_signal(sig, frame):
         pass
     sys.exit(0)
 
-def generate_button_img(text: str, color: str = "cyan", font: ImageFont.FreeTypeFont = value_font, width: int = 72, height: int = 72) -> str:
-    """
-    Display an image with the chosen GPU statistic on the Stream Deck.
-    :param text: Text to display
-    :param color: Color of the image (in any format that the fill parameter of Pillow supports)
-    :param font: Font from ImageFont to use for the image. Uses the default "value_font" if not specified
-    :param width: Image width (Stream Deck button width)
-    :param height: Image height (Stream Deck button height)
-    :return: Base64-encoded image to be displayed on the button
-    """
-
-    if color is None:
-        color = "cyan"
-
-    image = Image.new("RGBA", (width, height), color=(0, 0, 0, 0))
-    draw = ImageDraw.Draw(image)
-
-    # Text in the center
-    draw.text((width // 2, height // 2), text, fill=color, font=font, anchor="mm")
-
-    buffered = io.BytesIO()
-    image.save(buffered, format="PNG")
-
-    img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
-    return f"data:image/png;base64,{img_str}"
 
 def get_gpus() -> list[dict]:
     """
@@ -197,24 +171,24 @@ class GPUUsage(plugin.SDPlugin):
         action = info["action"].split(".")[-1]
 
         if action == "usage":
-            img = generate_button_img(f"{gpu_info["gpu_usage"]}%")
+            img = plugin.generate_button_img(f"{gpu_info["gpu_usage"]}%")
             self.SetImage(context, img)
 
         elif action == "vram_total":
-            img = generate_button_img(f"{gpu_info['vram_total']} GB")
+            img = plugin.generate_button_img(f"{gpu_info['vram_total']} GB")
             self.SetImage(context, img)
 
         elif action == "vram_used":
-            img = generate_button_img(f"{gpu_info['vram_used']} GB")
+            img = plugin.generate_button_img(f"{gpu_info['vram_used']} GB")
             self.SetImage(context, img)
 
         elif action == "vram_usage":
-            img = generate_button_img(f"{gpu_info['vram_usage']}%")
+            img = plugin.generate_button_img(f"{gpu_info['vram_usage']}%")
             self.SetImage(context, img)
 
         elif action == "power_usage":
             # Use a smaller font for the wattage
-            img = generate_button_img(f"{gpu_info['power_usage']} W", font=wattage_font)
+            img = plugin.generate_button_img(f"{gpu_info['power_usage']} W", font=wattage_font)
             self.SetImage(context, img)
 
         elif action == "throttle":
@@ -226,11 +200,11 @@ class GPUUsage(plugin.SDPlugin):
                 text = "True"
             else:
                 text = "False"
-            img = generate_button_img(text, color=color)
+            img = plugin.generate_button_img(text, color=color)
             self.SetImage(context, img)
 
         elif action == "temperature":
-            img = generate_button_img(f"{gpu_info['temperature']}°C")
+            img = plugin.generate_button_img(f"{gpu_info['temperature']}°C")
             self.SetImage(context, img)
 
         else:
